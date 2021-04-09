@@ -7,17 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playground</title>
 </head>
+<style>
+    .box {
+        background-color: black;
+    }
+</style>
 
 <body style="background-color: black;">
     <div class=" header"
-        style="margin:0px;width: 1900px; height:85px;background-color: slateblue; text-align:center; color:aliceblue;">
+        style="margin:0px;width: 1900px; height:85px;background-color: slateblue; text-align:center; color:aliceblue;border-radius:3px;">
         <h1>Welcome to my playground</h1>
     </div>
     <div class="container">
         <div class="hero" style="display: flex; flex-wrap:wrap; justify-content:center; margin-top:50px; ">
             {% for i in range (0, x) %}
             <div class="box"
-                style="height:200px; width:200px; background-color:blue;margin:15px; padding:5px;border:white 2px solid">
+                style="height:200px;border-radius:5px; width:200px;;margin:15px; padding:5px;border:white 2px solid; background-color:{{ new_color };">
             </div>
 
             {% endfor %}
